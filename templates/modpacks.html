@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+{% block modpacks %}
+    {% for modpack in modpacks_list %}
+        <li>
+            <div class="logo">
+                <img src="{{ static_url_prefix+ modpack.logo }}">
+            </div>
+            <div class="name">{{ modpack.name }}</div>
+            <div class="version">{{ modpack.version }}</div>
+            <div class="client">
+                <a href="{{ modpack_url_prefix+modpack.dir+'/'+modpack.repoVersion+'/'+modpack.url }}">Client</a>
+            </div>
+            <div class="server">
+                <a href="{{ modpack_url_prefix+modpack.dir+'/'+modpack.repoVersion+'/'+modpack.serverPack }}">Server</a>
+            </div>
+        </li>
+    {% endfor %}
+{% endblock %}

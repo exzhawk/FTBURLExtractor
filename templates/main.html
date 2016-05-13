@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FTB Mod Packs</title>
+</head>
+<body>
+<ul id="nav_bar">
+    <li><a href="modpacks">Modpacks</a></li>
+    <li><a href="thirdparty">Thirdparty</a></li>
+    <li><label for="packcode"></label>
+        <input type="text" id="packcode">
+        <button onclick="location.href='packcode/'+document.getElementById('packcode').value">Get Pack by Code</button>
+    </li>
+</ul>
+<ul id="modpacks">{% block modpacks %}{% endblock %}</ul>
+</body>
+</html>
