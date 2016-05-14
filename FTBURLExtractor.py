@@ -1,3 +1,4 @@
+import requests_cache
 from flask import Flask, render_template
 from xml.etree import ElementTree
 import requests
@@ -9,6 +10,7 @@ MODPACKS_XML_URL = STATIC_URL_PREFIX + 'modpacks.xml'
 THIRDPARTY_XML_URL = STATIC_URL_PREFIX + 'thirdparty.xml'
 
 app = Flask(__name__)
+requests_cache.install_cache(backend='memory', expire_after=300)
 
 
 def get_modpacks_from_url(xml_url):
@@ -44,6 +46,7 @@ def packcode(code):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,
-            host='0.0.0.0',
-            port=8090)
+    app.run(
+        # debug=True,
+        # host='0.0.0.0',
+        port=8090)
