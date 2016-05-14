@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  list-style: none;
+}
+li:hover {
+  background-color: #ccc;
+}
+a {
+  text-decoration: none;
+}
+#nav_bar {
+  top: 0;
+  margin: 8px;
+}
+#nav_bar li {
+  float: left;
+  padding: 10px;
+}
+#nav_bar li #packcode {
+  width: 300px;
+}
+#modpacks {
+  margin: 0;
+  flex: 1;
+}
+#modpacks li {
+  clear: left;
+  border: 1px solid #bfbfbf;
+  box-shadow: 2px 2px 3px #aaa;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+}
+#modpacks li div {
+  float: left;
+  margin: 4px;
+}
