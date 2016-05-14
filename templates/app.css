@@ -29,6 +29,9 @@ a {
 #nav_bar li #packcode {
   width: 300px;
 }
+#nav_bar #github_link {
+  float: right;
+}
 #modpacks {
   margin: 0;
   flex: 1;
