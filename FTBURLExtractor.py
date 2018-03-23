@@ -4,7 +4,7 @@ import requests
 import requests_cache
 from flask import Flask, render_template
 
-FTB_URL_PREFIX = 'http://ftb.cursecdn.com/FTB2/'
+FTB_URL_PREFIX = 'https://ftb.cursecdn.com/FTB2/'
 STATIC_URL_PREFIX = FTB_URL_PREFIX + 'static/'
 MODPACK_URL_PREFIX = FTB_URL_PREFIX + 'modpacks/'
 PRIVATEPACK_URL_PREFIX = FTB_URL_PREFIX + 'privatepacks/'
